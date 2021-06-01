@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <title>Meteo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Icone-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="icona.png" />
+    <!--Foglio CSS esterno-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title" class="elem">
+        <h1 class="display-4">Previsioni Meteo</h1>
+    </div>
+
+    <!--Barra di ricerca-->
+    <div id ="searchContainer" class="input-group elem">
+        <input type="text" class="form-control" placeholder="Citt&agrave; o codice zip" aria-label="Citt&agrave; o codice zip" id = "searchInput">
+        <div class="input-group-append">
+            <button id="searchBtn" class="btn btn-info" type="button">Cerca</button>
+            <button id="geoBtn" class="btn btn-info" type="button"><i class="fas fa-map-marker-alt"></i></button>
+        </div>
+    </div>
+
+    <div id="weatherBlock">
+        <!--Meteo attuale-->
+        <div id="weather" class="card mb-3 elem">
+            <div class="card-body">
+              <p class="card-text">
+                <div id ="weatherContainer">
+                    <div id="weatherDescription">
+                        <h1 id="cityHeader"></h1>
+                        <div id ="weatherMain">
+                            <div id ="temperature" class="temp"></div>
+                            <div id ="weatherDescriptionHeader"></div>
+                            <div><img id="documentIconImg"></div>
+                        </div>
+                        <br>
+                        <div id="windSpeed" class="bottomDetails"></div>
+                        <div id="humidityElement" class="bottomDetails"></div>
+                    </div>
+                </div>
+              </p>
+            </div>
+        </div>
+
+        <!--Previsioni-->
+        <div class="card-deck elem">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Oggi</h5>
+                <p class="card-text">
+                    <div id="0">
+                        <div><img id="icon0"></div>
+                        <div id="desc0"></div>
+                        <br>
+                        <i class="fas fa-thermometer-full"></i>
+                        <div id="temp_max0" class="temp"></div>
+                        <br>
+                        <i class="fas fa-thermometer-quarter"></i>
+                        <div id="temp_min0" class="temp"></div>
+                    </div>
+                </p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Domani</h5>
+                <p class="card-text">
+                    <div id="1">
+                        <div><img id="icon1"></div>
+                        <div id="desc1"></div>
+                        <br>
+                        <i class="fas fa-thermometer-full"></i>
+                        <div id="temp_max1" class="temp"></div>
+                        <br>
+                        <i class="fas fa-thermometer-quarter"></i>
+                        <div id="temp_min1" class="temp"></div>
+                    </div>
+                </p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Tra 2 giorni</h5>
+                <p class="card-text">
+                    <div id="2">
+                        <div><img id="icon2"></div>
+                        <div id="desc2"></div>
+                        <br>
+                        <i class="fas fa-thermometer-full"></i>
+                        <div id="temp_max2" class="temp"></div>
+                        <br>
+                        <i class="fas fa-thermometer-quarter"></i>
+                        <div id="temp_min2" class="temp"></div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Tra 3 giorni</h5>
+                  <p class="card-text">
+                      <div id="3">
+                        <div><img id="icon3"></div>
+                          <div id="desc3"></div>
+                          <br>
+                          <i class="fas fa-thermometer-full"></i>
+                          <div id="temp_max3" class="temp"></div>
+                          <br>
+                          <i class="fas fa-thermometer-quarter"></i>
+                          <div id="temp_min3" class="temp"></div>
+                      </div>
+                  </p>
+              </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+Il sito è semplice alla vista. I colori tendono al blu e all'azzurro. La grafica, realizzata principalmente con Bootstrap, cerca di essere funzionale.
+
+Il blocco per inserire le informazioni è dotato di una linea di input in cui poter inserire sia il nome della località sia il codice zip. Dopo aver cliccato il bottone "Cerca", per poter prelevare le informazioni, nella funzione JS getSearchMethod analizziamo se l'utente ha inserito una città o un codice. Inseriamo quindi questo valore nella chiamata dell'API OpenWeatherMap e trascriviamo le informazioni nel blocco.
+
+Nel caso in cui si voglia effettuare una ricerca tramite geolocalizzazione, il pulsante corrispettivo attiva la funzione searchByPos, dove si ricavano le coordinate date dal browser.
+
+Allo stesso tempo vengono visualizzate anche le previsioni nella località prevista su quattro giorni: le informazioni riguardano la descrizione, la temperatura massima e la temperatura minima. 
+
+Alla prima ricerca, nella pagina risulterà presente soltato la barra di ricerca. Grazie alla funzione setWeatherInfo rendiamo visibile il blocco informazioni dopo la prima ricerca.

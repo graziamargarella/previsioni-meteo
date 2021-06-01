@@ -1,0 +1,38 @@
+body{
+    margin-top:30px;
+    margin-left:100px;
+    margin-right: 100px;
+    text-align: center;
+    color: white;
+    background-image: url("sfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+.elem{
+    margin:2em;
+}
+
+.card{
+    background-color: rgba(53, 186, 196, 0.842);
+}
+
+#weatherBlock{
+    visibility: hidden;
+}
+
+#searchContainer{
+    padding-right: 65px;
+}
+
+#title{
+    color: rgb(0, 83, 109);
+}
+
+.temp{
+    font-size: 22pt;
+}
+
+#documentIconImg{
+    width: 60px;
+}
